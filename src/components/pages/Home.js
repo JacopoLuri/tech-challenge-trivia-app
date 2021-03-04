@@ -1,7 +1,7 @@
 import { useContext } from 'react';
 import { Context } from '../../context/Context';
 import styled from 'styled-components';
-// import bgVideo from '../../video/bg.mp4';
+import bgVideo from '../../video/bg.mp4';
 
 // pieces
 import Starter from '../pieces/Starter';
@@ -30,7 +30,7 @@ const Home = () => {
     return (
         <StyledHome>
             <StyledBgVideo autoPlay loop muted>
-                {/* <source src={bgVideo} type='video/mp4' /> */}
+                <source src={bgVideo} type='video/mp4' />
             </StyledBgVideo>
             {
                 context.play
